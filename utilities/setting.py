@@ -1,0 +1,2 @@
+WIN_SIZE = WIN_W, WIN_H = (1024,768)
+BOUNDS = bounds = [10, 10, 1014, 758]

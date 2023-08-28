@@ -1,0 +1,1 @@
+WIN_SIZE = WIN_W, WIN_H = (1024,768)
