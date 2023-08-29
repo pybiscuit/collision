@@ -26,7 +26,8 @@ class Game:
         self.test_rect = testing.Tester().build_rects()
 
     def update(self):
-        self.player.update_position(update_vector=self.update_vector, collision_objects=self.test_rect)
+        self.player.update_position(update_vector=self.update_vector)
+        self.player.collision_detection(self.test_rect)
         self.update_vector = (0,0)
 
     def build_theta(self, mouse_coords):
@@ -116,11 +117,6 @@ class Game:
             start_point = self.player.pos
             if len(bullets) == 0:
                 bullets.append([(start_point), (end_point), 0])
-
-
-
-
-        
         
     def run(self):
         while True:

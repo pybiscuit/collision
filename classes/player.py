@@ -5,8 +5,8 @@ class Player(Entity):
 
     def __init__(self):
         super().__init__()
-        self.pos = [310, 282]
-        self._cache = (310, 282)
+        self.pos = [100, 100]
+        self._cache = (100, 100)
         self.id = "player"
 
     # def cache_pos(self):
@@ -32,25 +32,25 @@ class Player(Entity):
         # elif not y_max:
         #     self.pos[1] = 757
         
-    #     # object collision is off. shapes do not match Rects.
-    #     for obj in collision_objects:
-    #         inside = False
-    #         if not inside:
-    #             top_line = all([
-    #                 self.pos[1] >= obj.top,
-    #                 self.pos[1] <= obj.top+obj.height,
-    #                 self.pos[0] >= obj.left,
-    #                 self.pos[0] <= obj.left+obj.width
-    #             ])
-    #         if top_line:
-    #             self.pos[0], self.pos[1] = self._cache
+        # object collision is off. shapes do not match Rects.
+        # for obj in collision_objects:
+        #     inside = False
+        #     if not inside:
+        #         top_line = all([
+        #             self.pos[1] >= obj.top,
+        #             self.pos[1] <= obj.top+obj.height,
+        #             self.pos[0] >= obj.left,
+        #             self.pos[0] <= obj.left+obj.width
+        #         ])
+        #     if top_line:
+        #         self.pos[0], self.pos[1] = self._cache
             
-            # if self.pos[0] <= obj.left + 4:
-            #     self.pos[0] += 1
-            # elif self.pos[0] >= obj.left + 96:
-            #     self.pos[0] -= 1
-            # elif self.pos[1] <= obj.top + 4:
-            #     self.pos[1] += 1
-            # elif self.pos[1] >= obj.top + 96:
-            #     self.pos[1] -= 1
+        #     if self.pos[0] <= obj.left + 4:
+        #         self.pos[0] += 1
+        #     elif self.pos[0] >= obj.left + 96:
+        #         self.pos[0] -= 1
+        #     elif self.pos[1] <= obj.top + 4:
+        #         self.pos[1] += 1
+        #     elif self.pos[1] >= obj.top + 96:
+        #         self.pos[1] -= 1
 
